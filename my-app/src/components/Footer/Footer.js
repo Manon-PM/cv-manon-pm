@@ -5,7 +5,7 @@ import github from '../../assets/images/github.png';
 import mail from '../../assets/images/plane.png';
 
 function Footer() {
-    return(
+    return (
         <footer className="footer">
             <div className="contact-container">
                 <button className="footer-button linkedin">

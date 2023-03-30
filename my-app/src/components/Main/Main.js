@@ -8,7 +8,7 @@ import hobbies from '../../assets/images/hobbies.png';
 import experience from '../../assets/images/portfolio.png';
 
 function Main() {
-    return(
+    return (
         <main className="main">
             <section className="circle-container">
                 <div className="photo-container">
