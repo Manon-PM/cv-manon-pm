@@ -12,7 +12,11 @@ function AboutMe() {
     const [selectedSection, setSelectedSection] = useState(0);
 
     const sectionToDisplay = (num) => {
-        setSelectedSection(num);
+        if (num !== selectedSection) {
+            setSelectedSection(num);
+        } else {
+            setSelectedSection(0);
+        }
     };
 
     return (

@@ -1,4 +1,4 @@
-import 'Hobby.scss';
+import './Hobby.scss';
 
 import cosplay from '../../assets/images/cosplay.png';
 import jv from '../../assets/images/hobbies.png';
@@ -11,7 +11,7 @@ function Hobby() {
             <div className="hobby-container">
                 <section className="hobby-item-cosplay">
                     <img src={cosplay} alt="Cosplay" className="hobby-item-cosplay-img" />
-                    <h4 className="hobby-item-title"><a href="https://fr.wikipedia.org/wiki/Cosplay">Cosplay</a></h4>
+                    <h4 className="hobby-item-title"><a href="https://fr.wikipedia.org/wiki/Cosplay" target="_blank" rel="noopener noreferrer">Cosplay</a></h4>
                     <p>Loisir qui consiste à créer le costume d'un personnage de fiction et l'interpréter.</p>
                     <div className="cosplay-skills">
                         <ul className="cosplay-skills-list">

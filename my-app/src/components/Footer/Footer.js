@@ -9,16 +9,18 @@ function Footer() {
         <footer className="footer">
             <div className="contact-container">
                 <button className="footer-button linkedin">
-                    <img src={linkedin} alt="LinkedIn" className="linkedin-icon" />
+                    <a href="https://www.linkedin.com/in/manon-p-m/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" className="linkedin-icon" /></a>
                 </button>
                 <button className="footer-button github">
-                    <img src={github} alt="GitHub" className="github-icon" />
+                    <a href="https://github.com/Manon-PM" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" className="github-icon" /></a>
                 </button>
                 <div className="email">
-                    <p>Contactez-moi</p>
-                    <button className="footer-button mail">
-                        <img src={mail} alt="Email" className="mail-icon" />
-                    </button>
+                    <a href="mailto:manon.pms@gmail.com">
+                        <p>Contactez-moi</p>
+                        <button className="footer-button mail">
+                            <img src={mail} alt="Email" className="mail-icon" />
+                        </button>
+                    </a>
                 </div>
             </div>
 

@@ -16,13 +16,13 @@ function Experience() {
 
     return (
         <div className="experience">
-            <h3 className="experience-title">Expérience professionnelle</h3>
+            <h3 className="experience-title">Expériences</h3>
             <h2>Développement Web</h2>
             <div className="experience-container">
                 <section className="experience-item">
                     <h5 className="experience-item-title">Projet de fin de formation</h5>
-                    <p className="experience-item-org">O'clock</p>
                     <p className="experience-item-date">2023</p>
+                    <p className="experience-item-org">- O'clock</p>
                     <img src="#" alt="Représentation du projet" className="experience-item-img" />
                     <button className="experience-item-btn" onClick={toggleDescription}>
                         <img src={chevron} alt="Flèche de déroulement" className={chevronClassNames} />

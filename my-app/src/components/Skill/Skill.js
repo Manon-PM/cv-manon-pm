@@ -7,7 +7,11 @@ function Skill() {
     const [selectedSkill, setSelectedSkill] = useState(0);
 
     const skillToDisplay = (num) => {
-        setSelectedSkill(num);
+        if (num !== selectedSkill) {
+            setSelectedSkill(num);
+        } else {
+            setSelectedSkill(0);
+        }
     };
 
     return (
@@ -45,6 +49,7 @@ function Skill() {
                     </ul>
                 )}
                 <p className="skill-item">+ Anglais écrit niveau B2</p>
+                <p className="skill-item">+ Très bon niveau en français</p>
             </section>
         </div>
     );
