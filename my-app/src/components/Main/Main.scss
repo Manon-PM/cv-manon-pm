@@ -1,4 +1,11 @@
 main {
+    .main-titles {
+        width: 80vw;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    }
 
     .circle-container {
         position: relative;
@@ -7,38 +14,55 @@ main {
         justify-content: center;
         width: 90vw;
         height: 90vw;
-        margin: -2em auto 2em;
+        margin: -3em auto 2em;
 
         button {
             position: absolute;
             left: 50%;
             margin-left: -8vw;
 
-            #experience {
-                transform: translate(35vw);
-            }
-            #hobbies {
-                transform: rotate(45deg) translate(35vw) rotate(-45deg);
-            }
-            #about-me {
-                transform: rotate(90deg) translate(35vw) rotate(-90deg);
-            }
-            #skills {
-                transform: rotate(135deg) translate(35vw) rotate(-135deg);
-            }
-            #training {
-                transform: rotate(180deg) translate(35vw) rotate(-180deg);
+            .button-text {
+                font-style: italic;
+                font-size: 0.9em;
             }
         }
-    }
-    .photo {
-        width: 40vw;
-        max-width: 200px;
-        border-radius: 50%;
+        #experience {
+            transform: translate(37vw);
+        }
+        #hobbies {
+            transform: rotate(42deg) translate(39vw) rotate(-42deg);
+        }
+        #about-me {
+            transform: rotate(90deg) translate(38vw) rotate(-90deg);
+        }
+        #skills {
+            transform: rotate(140deg) translate(42vw) rotate(-140deg);
+        }
+        #training {
+            transform: rotate(180deg) translate(37vw) rotate(-180deg);
+        }
+        .photo {
+            width: 40vw;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        .button-icon {
+            width: 12vw;
+            max-width: 64px;
+        }
     }
 
-    .button-icon {
-        width: 12vw;
-        max-width: 64px;
+    .welcome-title {
+        margin: 2em 0 1em;
+        padding: 1em;
+        background-color: #f1d4bf4d;
+        font-size: 1.3em;
+        font-weight: 600;
+        transition: background-color ease-in-out 0.4s;
+
+        &-dark {
+            background-color: #b57ae528;
+            transition: background-color ease-in-out 0.4s;
+        }
     }
 }

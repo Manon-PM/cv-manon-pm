@@ -9,6 +9,10 @@
     background-image: url(../../assets/images/stacked-waves-haikei-bg-pc.svg);
   }
   text-align: center;
+  transition: all 0.4s ease-in-out;
+  a, button {
+    transition: all 0.4s ease-in-out;
+  }
 
   &-dark {
     background-image: url(../../assets/images/stacked-waves-haikei-bg-mobile-dark-mode.svg);
@@ -17,8 +21,14 @@
     }
     color: rgb(229, 229, 240);
     a {
-      color: rgb(148, 168, 255);
+        color: rgb(148, 168, 255);
+        transition: all 0.4s ease-in-out;
     }
+    button {
+        color: rgb(229, 229, 240);
+        transition: all 0.4s ease-in-out;
+    }
+    transition: all 0.4s ease-in-out;
   }
 
   h1 {
@@ -32,5 +42,11 @@
     font-weight: 100;
     font-style: italic;
     text-align: right;
+  }
+
+  h3 {
+    font-family: 'Arima', display;
+    font-weight: 600;
+    font-size: 1.5em;
   }
 }

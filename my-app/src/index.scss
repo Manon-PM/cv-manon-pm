@@ -1,11 +1,24 @@
 @import url(https://fonts.bunny.net/css?family=arima:100,600|dosis:300,600);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   width: 100vw;
 }
 
 button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3e387a;
+  font-weight: 600;
+  font-style: italic;
 }

@@ -35,29 +35,38 @@ function Main({ darkMode }) {
     return (
         <div className="main-container">
             {selectedSection === 0 && (
-                <main className="main">
+                <main>
+                    <div className="main-titles">
+                        <h1>Manon Pons-Mazars</h1>
+                        <h2>Développeuse Web</h2>
+                    </div>
                     <section className="circle-container">
                         <div className="photo-container">
                             <img src={photo} alt="Manon Pons-Mazars" className="photo" />
                         </div>
-                        <button onClick={() => {sectionToDisplay(1)}} className="button training">
-                            <img src={darkMode ? formationDark : formation} alt="Formation" className="button-icon" id="training" />
+                        <button onClick={() => {sectionToDisplay(1)}} className="button training" id="training">
+                            <img src={darkMode ? formationDark : formation} alt="Formation" className="button-icon"  />
+                            <p className="button-text">Formation</p>
                         </button>
-                        <button onClick={() => {sectionToDisplay(2)}} className="button skills">
-                            <img src={darkMode ? skillsDark : skills} alt="Compétences" className="button-icon" id="skills" />
+                        <button onClick={() => {sectionToDisplay(2)}} className="button skills" id="skills">
+                            <img src={darkMode ? skillsDark : skills} alt="Compétences" className="button-icon" />
+                            <p className="button-text">Compétences</p>
                         </button>
-                        <button onClick={() => {sectionToDisplay(3)}} className="button about-me">
-                            <img src={darkMode ? aboutMeDark : aboutMe} alt="À propos de moi" className="button-icon" id="about-me" />
+                        <button onClick={() => {sectionToDisplay(3)}} className="button about-me" id="about-me">
+                            <img src={darkMode ? aboutMeDark : aboutMe} alt="À propos de moi" className="button-icon" />
+                            <p className="button-text">Infos</p>
                         </button>
-                        <button onClick={() => {sectionToDisplay(4)}} className="button hobbies">
-                            <img src={darkMode ? hobbiesDark : hobbies} alt="Loisirs" className="button-icon" id="hobbies" />
+                        <button onClick={() => {sectionToDisplay(4)}} className="button hobbies" id="hobbies">
+                            <img src={darkMode ? hobbiesDark : hobbies} alt="Loisirs" className="button-icon" />
+                            <p className="button-text">Loisirs</p>
                         </button>
-                        <button onClick={() => {sectionToDisplay(5)}} className="button experience">
-                            <img src={darkMode ? experienceDark : experience} alt="Expérience" className="button-icon" id="experience" />
+                        <button onClick={() => {sectionToDisplay(5)}} className="button experience" id="experience">
+                            <img src={darkMode ? experienceDark : experience} alt="Expérience" className="button-icon" />
+                            <p className="button-text">Expérience</p>
                         </button>
                     </section>
                     <section className="welcome">
-                        <h3>Bienvenue sur mon CV numérique</h3>
+                        <h3 className={darkMode ? "welcome-title welcome-title-dark" : "welcome-title"}>Bienvenue sur mon CV numérique</h3>
                         <p>Un peu plus complet que mon <a href="#">CV classique</a></p>
                     </section>
                 </main>
