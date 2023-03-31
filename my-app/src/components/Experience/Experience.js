@@ -2,9 +2,12 @@ import { useState } from 'react';
 
 import './Experience.scss';
 
+// Image
 import chevron from '../../assets/images/chevron.png';
+// Dark mode image
+import chevronDark from '../../assets/images/chevron_dark-mode.png';
 
-function Experience() {
+function Experience({ darkMode }) {
 
     const [open, setopen] = useState(false);
 
@@ -25,7 +28,7 @@ function Experience() {
                     <p className="experience-item-org">- O'clock</p>
                     <img src="#" alt="Représentation du projet" className="experience-item-img" />
                     <button className="experience-item-btn" onClick={toggleDescription}>
-                        <img src={chevron} alt="Flèche de déroulement" className={chevronClassNames} />
+                        <img src={darkMode ? chevronDark : chevron} alt="Flèche de déroulement" className={chevronClassNames} />
                     </button>
                     {open && (
                         <div className="experience-item-description">

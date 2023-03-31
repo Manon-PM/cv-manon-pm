@@ -1,0 +1,44 @@
+main {
+
+    .circle-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        height: 90vw;
+        margin: -2em auto 2em;
+
+        button {
+            position: absolute;
+            left: 50%;
+            margin-left: -8vw;
+
+            #experience {
+                transform: translate(35vw);
+            }
+            #hobbies {
+                transform: rotate(45deg) translate(35vw) rotate(-45deg);
+            }
+            #about-me {
+                transform: rotate(90deg) translate(35vw) rotate(-90deg);
+            }
+            #skills {
+                transform: rotate(135deg) translate(35vw) rotate(-135deg);
+            }
+            #training {
+                transform: rotate(180deg) translate(35vw) rotate(-180deg);
+            }
+        }
+    }
+    .photo {
+        width: 40vw;
+        max-width: 200px;
+        border-radius: 50%;
+    }
+
+    .button-icon {
+        width: 12vw;
+        max-width: 64px;
+    }
+}

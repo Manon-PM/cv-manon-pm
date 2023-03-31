@@ -1,15 +1,16 @@
 import './Header.scss';
 
-function Header() {
+function Header({ toggleDarkMode }) {
   return (
     <header className="header">
         <div className="dark-mode-container">
-            <input type="checkbox" className="dark-mode-toggle" id="toggle" />
+            <input onChange={() => toggleDarkMode()} type="checkbox" className="dark-mode-toggle" id="toggle" />
             <label htmlFor="toggle"></label>
         </div>
-
-        <h1>Manon Pons-Mazars</h1>
-        <h2>Développeuse Web</h2>
+        <div className="header-titles">
+          <h1>Manon Pons-Mazars</h1>
+          <h2>Développeuse Web</h2>
+        </div>
     </header>
   );
 }

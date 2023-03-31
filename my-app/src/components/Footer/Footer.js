@@ -1,24 +1,30 @@
 import './Footer.scss';
 
+// Images
 import linkedin from '../../assets/images/linkedin.png';
 import github from '../../assets/images/github.png';
 import mail from '../../assets/images/plane.png';
 
-function Footer() {
+// Dark mode images
+import linkedinDark from '../../assets/images/linkedin_dark-mode.png';
+import githubDark from '../../assets/images/github_dark-mode.png';
+import mailDark from '../../assets/images/plane_dark-mode.png';
+
+function Footer({ darkMode }) {
     return (
         <footer className="footer">
             <div className="contact-container">
                 <button className="footer-button linkedin">
-                    <a href="https://www.linkedin.com/in/manon-p-m/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" className="linkedin-icon" /></a>
+                    <a href="https://www.linkedin.com/in/manon-p-m/" target="_blank" rel="noopener noreferrer"><img src={darkMode ? linkedinDark : linkedin} alt="LinkedIn" className="linkedin-icon" /></a>
                 </button>
                 <button className="footer-button github">
-                    <a href="https://github.com/Manon-PM" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" className="github-icon" /></a>
+                    <a href="https://github.com/Manon-PM" target="_blank" rel="noopener noreferrer"><img src={darkMode ? githubDark : github} alt="GitHub" className="github-icon" /></a>
                 </button>
                 <div className="email">
                     <a href="mailto:manon.pms@gmail.com">
                         <p>Contactez-moi</p>
                         <button className="footer-button mail">
-                            <img src={mail} alt="Email" className="mail-icon" />
+                            <img src={darkMode ? mailDark : mail} alt="Email" className="mail-icon" />
                         </button>
                     </a>
                 </div>
