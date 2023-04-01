@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import './App.scss';
+import './AppDark.scss';
 
 import Header from '../Header/Header';
 import Main from '../Main/Main';

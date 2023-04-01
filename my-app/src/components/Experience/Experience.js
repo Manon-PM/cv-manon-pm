@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import './Experience.scss';
 
 // Image
 import chevron from '../../assets/images/chevron.png';
+import scriptorium from '../../assets/images/le-scriptorium.png';
 // Dark mode image
 import chevronDark from '../../assets/images/chevron_dark-mode.png';
 
@@ -12,6 +13,22 @@ function Experience({ darkMode }) {
     const [open, setopen] = useState(false);
 
     const chevronClassNames = open ? 'chevron chevron-open' : 'chevron';
+
+    // To get and use the viewport size
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    
+    
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => {
+            window.removeEventListener("resize", handleWindowResize);
+        };
+    }, [windowWidth]);
 
     const toggleDescription = () => {
         setopen(!open);
@@ -23,10 +40,10 @@ function Experience({ darkMode }) {
             <h2>Développement Web</h2>
             <div className="experience-container">
                 <section className="experience-item">
-                    <h5 className="experience-item-title">Projet de fin de formation</h5>
+                    <h4 className="experience-item-title">Projet de fin de formation - Le Scriptorium</h4>
                     <p className="experience-item-date">2023</p>
                     <p className="experience-item-org">- O'clock</p>
-                    <img src="#" alt="Représentation du projet" className="experience-item-img" />
+                    <img src={scriptorium} alt="Représentation du projet" className="experience-item-img" />
                     <button className="experience-item-btn" onClick={toggleDescription}>
                         <img src={darkMode ? chevronDark : chevron} alt="Flèche de déroulement" className={chevronClassNames} />
                     </button>

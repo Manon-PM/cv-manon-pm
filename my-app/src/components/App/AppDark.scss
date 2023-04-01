@@ -1,0 +1,23 @@
+.App-dark {
+    background-image: url(../../assets/images/stacked-waves-haikei-bg-mobile-dark-mode.svg);
+    @media (min-width: 1080px) {
+        background-image: url(../../assets/images/stacked-waves-haikei-bg-pc-dark-mode.svg);
+    }
+    color: rgb(206, 206, 228);
+    a, .contact-container .email a {
+        color: rgb(148, 168, 255);
+        transition: all 0.4s ease-in-out;
+    }
+    button, p {
+        color: rgb(206, 206, 228);
+        transition: all 0.4s ease-in-out;
+    }
+    footer {
+        .credits {
+            color: rgb(206, 206, 228);
+            opacity: 0.8;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+    transition: all 0.4s ease-in-out;
+}

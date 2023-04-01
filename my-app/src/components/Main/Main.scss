@@ -1,3 +1,6 @@
+.main-container {
+    padding-bottom: 3em; 
+}
 main {
     .main-titles {
         width: 80vw;
@@ -53,8 +56,9 @@ main {
     }
 
     .welcome-title {
-        margin: 2em 0 1em;
+        margin: 1em 1em 0.7em;
         padding: 1em;
+        border-radius: 0.5em;
         background-color: #f1d4bf4d;
         font-size: 1.3em;
         font-weight: 600;
@@ -65,4 +69,38 @@ main {
             transition: background-color ease-in-out 0.4s;
         }
     }
+
+    .welcome-text {
+        width: 60vw;
+        text-align: right;
+        margin-left: 30vw;
+    }
+}
+
+.close-section {
+    position: absolute;
+    top: 6vh;
+    right: 1em;
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+    border-radius: 50%;
+    background-color: #f8f0ea4d;
+    transition: background-color ease-in-out 0.4s;
+
+    &-dark {
+        background-color: #b57ae528;
+        transition: background-color ease-in-out 0.4s;
+    }
+
+    .close-icon {
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        opacity: 0.5;
+    }
+}
+
+.aboutme, .skill, .training, .experience, .hobby {
+    margin-top: 6vh;
 }

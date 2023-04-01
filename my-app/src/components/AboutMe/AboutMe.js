@@ -2,12 +2,20 @@ import { useState } from 'react';
 
 import './AboutMe.scss';
 
+// Images
 import gps from '../../assets/images/gps.png';
+import email from '../../assets/images/email.png';
 import age from '../../assets/images/calendar.png';
 import retraining from '../../assets/images/retraining.png';
 import accessibility from '../../assets/images/accessibility.png';
+// Dark mode images
+import gpsDark from '../../assets/images/gps_dark-mode.png';
+import emailDark from '../../assets/images/email_dark-mode.png';
+import ageDark from '../../assets/images/calendar_dark-mode.png';
+import retrainingDark from '../../assets/images/retraining_dark-mode.png';
+import accessibilityDark from '../../assets/images/accessibility_dark-mode.png';
 
-function AboutMe() {
+function AboutMe({ darkMode }) {
 
     const [selectedSection, setSelectedSection] = useState(0);
 
@@ -21,34 +29,50 @@ function AboutMe() {
 
     return (
         <div className="aboutme">
-            <h3 className="aboutme-title">À propos de moi</h3>
+            <h3 className="aboutme-title" onClick={() => {sectionToDisplay(0)}}>À propos de moi</h3>
             <div className="aboutme-container">
+            {selectedSection === 0 && (
                 <section className="aboutme-infos">
                     <div className="infos-item">
-                        <img src={gps} alt="Localisation" className="infos-img"/>
+                        <img src={darkMode ? gpsDark : gps} alt="Localisation" className="infos-img"/>
                         <p className="infos-text">Calmont (12), Occitanie</p>
                     </div>
                     <div className="infos-item">
-                        <img src={age} alt="Âge" className="infos-img"/>
+                        <img src={darkMode ? emailDark : email} alt="Email" className="infos-img"/>
+                        <a href="mailto:manon.pms@gmail.com" className="infos-text">manon.pms@gmail.com</a>
+                    </div>
+                    <div className="infos-item">
+                        <img src={darkMode ? ageDark : age} alt="Âge" className="infos-img"/>
                         <p className="infos-text">27 ans</p>
                     </div>
                     <div className="infos-item">
-                        <img src={retraining} alt="Reconversion professionnelle" className="infos-img"/>
+                        <img src={darkMode ? retrainingDark : retraining} alt="Reconversion professionnelle" className="infos-img"/>
                         <p className="infos-text">En reconversion professionnelle</p>
                     </div>
                     <div className="infos-item">
-                        <img src={accessibility} alt="Accessibilité" className="infos-img"/>
+                        <img src={darkMode ? accessibilityDark : accessibility} alt="Accessibilité" className="infos-img"/>
                         <p className="infos-text">Autiste Asperger (RQTH en attente)</p>
                     </div>
                 </section>
-                <hr/>
+            )}
                 <section className="aboutme-other">
                     <h5 className="other-title" onClick={() => {sectionToDisplay(1)}}>Mon parcours</h5>
                     {selectedSection === 1 && (
-                        <p className="other-text">
-                            Mon parcours est assez atypique. J’ai suivi une formation hybride pour devenir Professeure des écoles (licence de Biologie puis licence de Lettres et enfin Master MEEF), acquérant ainsi la rigueur des sciences et la culture des lettres.<br />
-                            Malheureusement, le cadre de l’Education Nationale ne m’a pas convenu et j’ai décidé de laisser parler mon appétence pour l’informatique en me tournant vers le Développement web. Aujourd’hui, je n’ai aucun regret : j’ai trouvé ma voie !
-                        </p>
+                        <div className="other-text">
+                            <p className="other-text-p">Mon parcours est assez atypique.</p><br />
+                            <p className="other-text-p">J’ai suivi une formation hybride pour devenir <strong>Professeure des écoles</strong> :</p>
+                            <ul className="other-training">
+                                <li className="other-training-item">Licence de Biologie</li>
+                                <li className="other-training-item">Licence de Lettres</li>
+                                <li className="other-training-item meef-container">
+                                    <li className="meef">Master MEEF</li>
+                                    <div className="meef-details">(Métiers de l'Enseignement, de l'Education et de la Formation)</div>
+                                </li>
+                            </ul>
+                            <p className="other-text-p">Tout ceci m'a permis d'acquérir la <strong>rigueur des sciences</strong> et la <strong>culture des lettres</strong>, ainsi qu'une <strong>façon de penser et de voir le monde polyvalente</strong>.</p><br />
+                            <p className="other-text-p">Malheureusement, le cadre de l’Education Nationale ne m’a pas convenu. J'aspirais à une plus grande liberté d'expression.</p><br />
+                            <p className="other-text-p">C'est pourquoi j’ai décidé de laisser parler mon appétence pour l’informatique en me tournant vers le Développement web grâce à une formation intensive proposée par l'école O'clock. Aujourd’hui, je n’ai aucun regret : j’ai trouvé ma voie !</p>
+                        </div>
                     )}
                     <h5 className="other-title" onClick={() => {sectionToDisplay(2)}}>Softskills</h5>
                     {selectedSection === 2 && (

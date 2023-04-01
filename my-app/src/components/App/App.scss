@@ -1,8 +1,10 @@
 .App {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   height: fit-content;
   margin: auto;
+  padding-bottom: 4em;
   background-image: url(../../assets/images/stacked-waves-haikei-bg-mobile.svg);
   background-size: cover;
   @media (min-width: 1080px) {
@@ -14,39 +16,35 @@
     transition: all 0.4s ease-in-out;
   }
 
-  &-dark {
-    background-image: url(../../assets/images/stacked-waves-haikei-bg-mobile-dark-mode.svg);
-    @media (min-width: 1080px) {
-      background-image: url(../../assets/images/stacked-waves-haikei-bg-pc-dark-mode.svg);
-    }
-    color: rgb(229, 229, 240);
-    a {
-        color: rgb(148, 168, 255);
-        transition: all 0.4s ease-in-out;
-    }
-    button {
-        color: rgb(229, 229, 240);
-        transition: all 0.4s ease-in-out;
-    }
-    transition: all 0.4s ease-in-out;
-  }
-
   h1 {
-    font-family: 'Arima', display;
+    font-family: 'Arima';
     font-weight: 600;
     font-size: 1.5em;
   }
 
   h2 {
-    font-family: 'Arima', display;
+    font-family: 'Arima';
     font-weight: 100;
     font-style: italic;
     text-align: right;
   }
 
   h3 {
-    font-family: 'Arima', display;
+    font-family: 'Arima';
     font-weight: 600;
     font-size: 1.5em;
+  }
+
+  h5 {
+    font-family: 'Arima';
+    font-weight: 100;
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    &::after {
+      content: "⏷";
+      padding-left: 0.5em;
+      opacity: 0.1;
+      vertical-align: sub;
+    }
   }
 }

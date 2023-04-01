@@ -1,0 +1,68 @@
+.aboutme {
+    .aboutme-title {
+        margin-bottom: 1em;
+    }
+    .aboutme-infos {
+        margin-bottom: 1.5em;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(248,240,234,0.2) 30%, rgba(248,240,234,0.2) 70%, rgba(0,0,0,0) 80%) 1;
+        padding-bottom: 1em;
+        .infos-item {
+            display: flex;
+            margin: 0 0 0.5em 2em;
+            align-items: center;
+            gap: 1em;
+            .infos-img {
+                width: 2em;
+                @media (min-width: 768px) {
+                    width: 3em;
+                }
+            }
+        }
+    }
+    .aboutme-other {
+        width: 90vw;
+        margin: auto;
+        .other-text {
+            margin-bottom: 1em;
+            text-align: left;
+            @media (min-width: 768px) {
+                font-size: 1.2em;
+            }
+            .other-training {
+                margin: 0.5em 0;
+                font-size: 1.1em;
+                li {
+                    list-style-type: circle;
+                    margin-left: 2em;
+                }
+                .meef-container {
+                    display: flex;
+                    align-items: baseline;
+                    margin-left: 0;
+                    .meef {
+                        width: 50vw;
+                        @media (min-width: 375px) {
+                            width: 5em;
+                        }
+                    }
+                    .meef-details {
+                        width: 20em;
+                        font-size: 0.7em;
+                        opacity: 0.8;
+                        margin-left: 1em;
+                        @media (min-width: 375px) {
+                            width: 15em;
+                        }
+                    }
+                }
+            }
+        }
+        .softskills-list {
+            @media (min-width: 768px) {
+                font-size: 1.2em;
+            }
+        }
+    }
+    
+}
