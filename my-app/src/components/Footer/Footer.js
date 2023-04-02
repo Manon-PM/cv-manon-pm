@@ -34,7 +34,7 @@ function Footer({ darkMode }) {
 
             <p className="credits">
                 <span className="made-by">Manon Pons-Mazars - 2023</span>
-                <span className="icons-bg">Icônes créées par Freepik - Flaticon, éditées par mes soins.<br/> Backgrounds créés avec Haikei</span>
+                <span className="icons-bg">Icônes créées par Freepik - Flaticon, éditées par mes soins. Backgrounds créés avec Haikei</span>
             </p>
         </footer>
     );

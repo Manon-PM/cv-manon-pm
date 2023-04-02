@@ -18,6 +18,26 @@
             opacity: 0.8;
             transition: all 0.4s ease-in-out;
         }
+        .contact-container {
+            background-color: #0002227a;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+    .aboutme .aboutme-other .softskills-list .softskill-item {
+        color: rgb(184, 184, 255);
+        transition: all 0.4s ease-in-out;
+    }
+    .aboutme .aboutme-infos .infos-item {
+        background-color: #3d29697a;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle-container .photo {
+        box-shadow: #3d2969 0.3em 0.4em 0.1em 0.1em;
+        transition: all 0.4s ease-in-out;
+    }
+    .training .training-container .training-logo {
+        filter: hue-rotate(80deg);
+        transition: all 0.4s ease-in-out;
     }
     transition: all 0.4s ease-in-out;
 }

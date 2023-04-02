@@ -78,15 +78,15 @@ function AboutMe({ darkMode }) {
                     {selectedSection === 2 && (
                         <ul className="softskills-list">
                             <li className="softskill-item">Curiosité</li>
-                            <p className="softskill-text">L'envie de savoir et d'aller plus loin, puis de partager ces connaissances</p>
+                            <p className="softskill-text">L'envie de savoir et d'aller plus loin, puis de partager ses connaissances</p>
                             <li className="softskill-item">Rigueur</li>
                             <p className="softskill-text">Un travail propre et bien fait est un travail efficace</p>
-                            <li className="softskill-item">Ingéniosité</li>
+                            <li className="softskill-item ">Ingéniosité</li>
                             <p className="softskill-text">Retourner un problème jusqu'à trouver une bonne solution</p>
                             <li className="softskill-item">Créativité</li>
                             <p className="softskill-text">Retourner un problème jusqu'à trouver une solution originale et adaptée</p>
                             <li className="softskill-item">Bienveillance</li>
-                            <p className="softskill-text">Parce qu'être gentil sans arrière-pensée se perd</p>
+                            <p className="softskill-text">Parce qu'être véritablement gentil sans arrière-pensée se perd</p>
                             <li className="softskill-item">Ouverture d'esprit</li>
                             <p className="softskill-text">Chacun a le droit d'avoir ses propres valeurs</p>
                             <li className="softskill-item">Patience</li>

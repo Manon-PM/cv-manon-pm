@@ -7,7 +7,7 @@ main {
         max-width: 300px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .circle-container {
@@ -48,6 +48,8 @@ main {
             width: 40vw;
             max-width: 200px;
             border-radius: 50%;
+            box-shadow: #f0c3a3 0.3em 0.4em 0.1em 0.1em;
+            transition: box-shadow ease-in-out 0.4s;
         }
         .button-icon {
             width: 12vw;
@@ -71,9 +73,9 @@ main {
     }
 
     .welcome-text {
-        width: 60vw;
+        width: 50vw;
         text-align: right;
-        margin-left: 30vw;
+        margin-left: 40vw;
     }
 }
 

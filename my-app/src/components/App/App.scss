@@ -23,8 +23,12 @@
   }
 
   h2 {
+    width: 80vw;
+    max-width: 300px;
+    margin: auto;
     font-family: 'Arima';
     font-weight: 100;
+    font-size: 1em;
     font-style: italic;
     text-align: right;
   }
@@ -33,6 +37,14 @@
     font-family: 'Arima';
     font-weight: 600;
     font-size: 1.5em;
+  }
+
+  h4 {
+    font-family: 'Arima';
+    font-weight: 100;
+    font-size: 1.2em;
+    margin: 0.5em 0 0 1em;
+    text-align: left;
   }
 
   h5 {
@@ -46,5 +58,38 @@
       opacity: 0.1;
       vertical-align: sub;
     }
+  }
+
+  .subtitles {
+    max-width: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0.5em 0;
+  }
+  .item-date {
+      width: 50%;
+      font-size: 0.8em;
+      font-style: italic;
+      opacity: 0.7;
+  }
+  .item-org {
+      width: 50%;
+      font-size: 1.1em;
+  }
+  .content {
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1em;
+      text-align: left;
+  }
+
+  .training-logo, .experience-item-img {
+      width: 90vw;
+      max-width: 900px;
+      margin: 0.5em 0;
+      border-radius: 0.5em;
+      opacity: 0.8;
   }
 }

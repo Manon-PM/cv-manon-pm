@@ -1,10 +1,15 @@
 .experience {
-    .experience-item-img {
-        width: 96vw;
-        max-width: 900px;
+    h4 {
+        @media (max-width: 350px) {
+            font-size: 1.1em;
+        }
+    }
+    h5::after {
+        content: "";
     }
 
     .chevron{
+        width: 25px;
         transform: rotate(360deg);
         transition: transform 0.4s ease-in-out;
         &-open {

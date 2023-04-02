@@ -7,6 +7,9 @@
 body {
   font-family: 'Dosis', sans-serif;
   width: 100vw;
+  @media (min-width: 768px) {
+    font-size: 1.2em;
+  }
 }
 
 button {
@@ -22,3 +25,4 @@ a {
   font-weight: 600;
   font-style: italic;
 }
+
