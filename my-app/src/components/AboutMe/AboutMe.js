@@ -69,7 +69,7 @@ function AboutMe({ darkMode }) {
                                     <div className="meef-details">(Métiers de l'Enseignement, de l'Education et de la Formation)</div>
                                 </li>
                             </ul>
-                            <p className="other-text-p">Tout ceci m'a permis d'acquérir la <strong>rigueur des sciences</strong> et la <strong>culture des lettres</strong>, ainsi qu'une <strong>façon de penser et de voir le monde polyvalente</strong>.</p><br />
+                            <p className="other-text-p">Cela m'a permis d'acquérir la <strong>rigueur des sciences</strong> et la <strong>culture des lettres</strong>, ainsi qu'une <strong>façon de penser et de voir le monde polyvalente</strong>.</p><br />
                             <p className="other-text-p">Malheureusement, le cadre de l’Education Nationale ne m’a pas convenu. J'aspirais à une plus grande liberté d'expression.</p><br />
                             <p className="other-text-p">C'est pourquoi j’ai décidé de laisser parler mon appétence pour l’informatique en me tournant vers le Développement web grâce à une formation intensive proposée par l'école O'clock. Aujourd’hui, je n’ai aucun regret : j’ai trouvé ma voie !</p>
                         </div>

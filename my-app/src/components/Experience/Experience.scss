@@ -7,9 +7,38 @@
     h5::after {
         content: "";
     }
-
+    & .experience-item-description {
+        margin-bottom: 2em;
+    }
+    .experience-item-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-item ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+        &-title {
+            width: 100%;
+        }
+    }
+    .content-subitem {
+        list-style-type: circle;
+        margin-left: 2em;
+        &-react {
+            list-style-type: disc;
+            margin-left: 2em;
+            font-size: 0.9em;
+        }
+        ul {
+            margin-bottom: 0;
+        }
+    }
     .chevron{
         width: 25px;
+        margin-top: -0.6em;
         transform: rotate(360deg);
         transition: transform 0.4s ease-in-out;
         &-open {

@@ -1,0 +1,22 @@
+.skill {
+    &-container {
+        padding-top: 0.5em;
+        .skill-list {
+            width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            &-item {
+                padding-bottom: 0.5em;
+            }
+        }
+        .skill-other {
+            font-size: 1.1em;
+            margin-top: 2em;
+            .skill-item {
+                margin-bottom: 0.3em;
+            }
+        }
+    }
+}
