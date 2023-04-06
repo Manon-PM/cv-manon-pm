@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/cv-manon-pm/static/css/main.5eb34acc.css",
+    "main.js": "/cv-manon-pm/static/js/main.884a6474.js",
+    "static/media/le-scriptorium.png": "/cv-manon-pm/static/media/le-scriptorium.c327e747288cba4c55b8.png",
+    "static/media/avatar.jpg": "/cv-manon-pm/static/media/avatar.b16aa8862ffd1dcd8ece.jpg",
+    "static/media/about-me.png": "/cv-manon-pm/static/media/about-me.6219d9db5f07e3b7f57f.png",
+    "static/media/about-me_dark-mode.png": "/cv-manon-pm/static/media/about-me_dark-mode.96f4d220b88a59bf230d.png",
+    "static/media/hobbies.png": "/cv-manon-pm/static/media/hobbies.c87c3b41e15624212c51.png",
+    "static/media/hobbies_dark-mode.png": "/cv-manon-pm/static/media/hobbies_dark-mode.f4cee50938c76bb9d529.png",
+    "static/media/skills.png": "/cv-manon-pm/static/media/skills.6cbc2b2c51a230d33f7d.png",
+    "static/media/skills_dark-mode.png": "/cv-manon-pm/static/media/skills_dark-mode.d919402e52ac5a911f17.png",
+    "static/media/oclock.jpg": "/cv-manon-pm/static/media/oclock.00039a85bd11f981d9a6.jpg",
+    "static/media/training.png": "/cv-manon-pm/static/media/training.fcfa36d36fae6c6e3815.png",
+    "static/media/training_dark-mode.png": "/cv-manon-pm/static/media/training_dark-mode.845e8b831d9f3fe66107.png",
+    "static/media/portfolio.png": "/cv-manon-pm/static/media/portfolio.16b2ef202668493793d0.png",
+    "static/media/portfolio_dark-mode.png": "/cv-manon-pm/static/media/portfolio_dark-mode.2d30b7051052ef914624.png",
+    "static/media/stacked-waves-haikei-bg-mobile-dark-mode.svg": "/cv-manon-pm/static/media/stacked-waves-haikei-bg-mobile-dark-mode.7cd5d1801525b1d1139a.svg",
+    "static/media/stacked-waves-haikei-bg-mobile.svg": "/cv-manon-pm/static/media/stacked-waves-haikei-bg-mobile.aa7ecc73c25c8cfd6c6a.svg",
+    "static/media/stacked-waves-haikei-bg-pc-dark-mode.svg": "/cv-manon-pm/static/media/stacked-waves-haikei-bg-pc-dark-mode.f410bc8d7faf37293e55.svg",
+    "static/media/stacked-waves-haikei-bg-pc.svg": "/cv-manon-pm/static/media/stacked-waves-haikei-bg-pc.f87d80a015fba57686c2.svg",
+    "index.html": "/cv-manon-pm/index.html",
+    "main.5eb34acc.css.map": "/cv-manon-pm/static/css/main.5eb34acc.css.map",
+    "main.884a6474.js.map": "/cv-manon-pm/static/js/main.884a6474.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eb34acc.css",
+    "static/js/main.884a6474.js"
+  ]
+}
