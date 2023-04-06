@@ -66,3 +66,12 @@
     }
   }
   
+// Laptop
+@media (min-width: 1024px) {
+    .hobby-item-cosplay {
+        p, .cosplay-skills-list .cosplay-skills-item  {
+            font-size: 1em;
+        }
+    }
+}
+    

@@ -111,3 +111,12 @@
     }
   }
 }
+
+// Laptop
+@media (min-width: 1024px) {
+  .training, .experience {
+    .content {
+      width: 40vw;
+    }
+  }
+}

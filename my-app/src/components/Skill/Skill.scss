@@ -20,3 +20,35 @@
         }
     }
 }
+
+// Laptop
+@media (min-width: 1024px) {
+    .skill-tech {
+        display: flex;
+        justify-content: space-evenly;
+        &-item {
+            width: 38vw;
+            .skill-list {
+                width: 35vw;
+            }
+        }
+        .front-end {
+            width: 20vw;
+        }
+        h5 {
+            padding-bottom: 0.5em;
+            &::after {
+                content: none;
+            }
+        }
+    }
+    .skill-container .skill-other {
+        margin: 0;
+        padding: 0.5em;
+        text-align: left;
+        margin-left: 2.5em;
+        border-radius: 0.8em;
+        background: #f1d4bf4d;
+        background: linear-gradient(90deg, #f1d4bf4d 20%, rgba(0,0,0,0) 50%);
+    }
+}

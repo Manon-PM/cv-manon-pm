@@ -36,7 +36,8 @@
             margin-bottom: 0;
         }
     }
-    .chevron{
+    .chevron {
+        filter: (grayscale(20%) brightness(0.9));
         width: 25px;
         margin-top: -0.6em;
         transform: rotate(360deg);
@@ -44,6 +45,20 @@
         &-open {
             transform: rotate(180deg);
             transition: transform 0.4s ease-in-out;
+        }
+    }
+}
+
+// Laptop
+@media (min-width: 1024px) {
+    .experience-container {
+        display: flex;
+        justify-content: space-evenly;
+        .experience-item-img {
+            width: 46vw;
+        }
+        .experience-item-description {
+            width: 46vw;
         }
     }
 }

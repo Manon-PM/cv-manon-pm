@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import './Experience.scss';
 
@@ -11,21 +11,6 @@ import chevronDark from '../../assets/images/chevron_dark-mode.png';
 function Experience({ darkMode }) {
 
     const [selectedSection, setSelectedSection] = useState(0);
-
-    // To get and use the viewport size
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    
-    useEffect(() => {
-        const handleWindowResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener("resize", handleWindowResize);
-
-        return () => {
-            window.removeEventListener("resize", handleWindowResize);
-        };
-    }, [windowWidth]);
 
     const sectionExperienceToDisplay = (num) => {
         if (num !== selectedSection) {

@@ -40,3 +40,15 @@
         }
     }
 }
+
+// Laptop
+@media (min-width: 1024px) {
+    .training .training-container {
+        .training-content {
+            width: 80vw;
+        }
+        .training-description {
+            margin-left: 3em;
+        }
+    }
+}
