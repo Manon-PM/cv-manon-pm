@@ -19,6 +19,8 @@ function AboutMe({ darkMode }) {
 
     const [selectedSection, setSelectedSection] = useState(0);
 
+    const aboutMeInfosClassNames = selectedSection === 0 ? "aboutme-infos" : "aboutme-infos aboutme-infos--hidden";
+
     const sectionToDisplay = (num) => {
         if (num !== selectedSection) {
             setSelectedSection(num);
@@ -31,8 +33,7 @@ function AboutMe({ darkMode }) {
         <div className="aboutme">
             <h3 className="aboutme-title" onClick={() => {sectionToDisplay(0)}}>À propos de moi</h3>
             <div className="aboutme-container">
-            {selectedSection === 0 && (
-                <section className="aboutme-infos">
+                <section className={aboutMeInfosClassNames}>
                     <div className="infos-item">
                         <img src={darkMode ? gpsDark : gps} alt="Localisation" className="infos-img"/>
                         <p className="infos-text">Calmont (12), Occitanie</p>
@@ -54,7 +55,6 @@ function AboutMe({ darkMode }) {
                         <p className="infos-text">Autiste Asperger (RQTH en attente)</p>
                     </div>
                 </section>
-            )}
                 <section className="aboutme-other">
                     <h5 className="other-title" onClick={() => {sectionToDisplay(1)}}>Mon parcours</h5>
                     {selectedSection === 1 && (
@@ -88,12 +88,13 @@ function AboutMe({ darkMode }) {
                             <li className="softskill-item">Bienveillance</li>
                             <p className="softskill-text">Parce qu'être véritablement gentil sans arrière-pensée se perd</p>
                             <li className="softskill-item">Ouverture d'esprit</li>
-                            <p className="softskill-text">Chacun a le droit d'avoir ses propres valeurs</p>
+                            <p className="softskill-text">Chacun a le droit d'avoir ses propres valeurs <br />(dans le respect d'autrui)</p>
                             <li className="softskill-item">Patience</li>
                             <p className="softskill-text">Même après des heures à chercher où il manque ce fameux point-virgule</p>
                             <li className="softskill-item">Humilité</li>
                             <p className="softskill-text">La route de l'apprentissage est infinie et les points de vue le sont aussi</p>
                         </ul>
+                        // Room for improvement : Add all of this list in an array and map it
                     )}
                 </section>
             </div>

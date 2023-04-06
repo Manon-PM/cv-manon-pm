@@ -23,7 +23,7 @@ function Skill() {
                 {selectedSkill === 1 && (
                     <ul className="skill-list">
                         <li className="skill-list-item">HTML</li>
-                        <li className="skill-list-item">CSS/SCSS</li>
+                        <li className="skill-list-item">CSS/Sass</li>
                         <li className="skill-list-item">JavaScript</li>
                         <li className="skill-list-item">React</li>
                         <li className="skill-list-item">MUI/Bootstrap</li>

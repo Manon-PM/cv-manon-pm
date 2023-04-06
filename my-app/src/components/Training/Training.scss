@@ -25,5 +25,18 @@
             }
         }
     }
-    
+}
+
+// Tablet
+@media (min-width: 768px) {
+    .training .training-container {
+        .training-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90vw;
+            height: 40vh;
+            margin: auto;
+        }
+    }
 }

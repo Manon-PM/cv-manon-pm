@@ -6,8 +6,9 @@
         p {
             width: 90vw;
             margin: auto;
-            font-size: 0.9em;
+            font-size: 0.95em;
             font-style: italic;
+            text-align: left;
         }
         .cosplay-skills-list {
             width: 70vw;
@@ -15,7 +16,7 @@
                 width: 80vw;
             }
             @media (min-width: 768px) and (max-width: 1024px) {
-                width: 60vw;
+                width: 77vw;
             }
             @media (min-width: 1024px) {
                 width: 90vw;
@@ -49,3 +50,19 @@
         }
     }
 }
+
+// Tablet
+@media (min-width: 768px) {
+    .hobby-item-cosplay .hobby-item {
+        margin-left: 5.5em;
+    }
+    .hobby-other-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3em;
+    }
+    .cosplay-skills-list {
+        margin-top: 0.5em;
+    }
+  }
+  

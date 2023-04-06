@@ -19,10 +19,12 @@
             transition: background-color 0.4s ease-in-out;
             .infos-img {
                 width: 2em;
-                @media (min-width: 768px) {
-                    width: 3em;
-                }
             }
+        }
+    }
+    .aboutme-infos--hidden {
+        @media (max-width: 767px) {
+            display: none;
         }
     }
     .aboutme-other {
@@ -65,7 +67,7 @@
                 font-size: 1.2em;
                 font-weight: 600;
                 color: #332660;
-                @media (min-width: 768px) {
+                @media (min-width: 1024px) {
                     font-size: 1.4em;
                 }
                 transition: color 0.4s ease-in-out;
@@ -79,5 +81,28 @@
             }
         }
     }
-    
 }
+// Tablet
+@media (min-width: 768px) {
+    .aboutme-container {
+        display: flex;
+        .aboutme-infos {
+            width: 55vw;
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            .infos-item {
+                padding: 0.3em;
+                .infos-img {
+                width: 2.6em;
+                }
+            }
+        }
+        .aboutme-other {
+            width: 40vw;
+            .other-text, .softskills-list {
+                margin-right: 1em;
+            }
+        }
+    }
+  }  

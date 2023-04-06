@@ -83,6 +83,8 @@
   .item-org {
       width: 50%;
       font-size: 1.1em;
+      text-align: left;
+      margin-left: 1.5em;
   }
   .content {
       width: 90vw;
@@ -98,5 +100,14 @@
       margin: 0.5em 0;
       border-radius: 0.5em;
       opacity: 0.8;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .training {
+    .content {
+      width: 32vw;
+    }
   }
 }

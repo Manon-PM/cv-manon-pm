@@ -17,32 +17,38 @@ main {
         justify-content: center;
         width: 90vw;
         height: 90vw;
-        margin: -3em auto 2em;
+        margin: -3.5em auto 2em;
+        @media (min-width: 375px) {
+            margin: -4.7em auto 2em;
+        }
 
-        button {
-            position: absolute;
-            left: 50%;
-            margin-left: -8vw;
+        @media (max-width: 767px) {
+            button {
+                position: absolute;
+                left: 50%;
+                margin-left: -8vw;
 
-            .button-text {
-                font-style: italic;
-                font-size: 0.9em;
+                .button-text {
+                    font-style: italic;
+                    font-size: 0.9em;
+                }
             }
-        }
-        #experience {
-            transform: translate(37vw);
-        }
-        #hobbies {
-            transform: rotate(42deg) translate(39vw) rotate(-42deg);
-        }
-        #about-me {
-            transform: rotate(90deg) translate(38vw) rotate(-90deg);
-        }
-        #skills {
-            transform: rotate(140deg) translate(42vw) rotate(-140deg);
-        }
-        #training {
-            transform: rotate(180deg) translate(37vw) rotate(-180deg);
+            #experience {
+                transform: translate(37vw);
+            }
+            #hobbies {
+                transform: rotate(42deg) translate(39vw) rotate(-42deg);
+            }
+            #about-me {
+                transform: rotate(90deg) translate(38vw) rotate(-90deg);
+            }
+            #skills {
+                transform: rotate(140deg) translate(42vw) rotate(-140deg);
+            }
+            #training {
+                transform: rotate(180deg) translate(37vw) rotate(-180deg);
+            }
+
         }
         .photo {
             width: 40vw;
@@ -105,4 +111,24 @@ main {
 
 .aboutme, .skill, .training, .experience, .hobby {
     margin-top: 6vh;
+}
+
+// Tablet
+@media (min-width: 768px) {
+    section.circle-container {
+        margin: 0;
+        margin-top: 1em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 12em;
+        button {
+            width: 15vw;
+            height: fit-content;
+        }
+        .photo-container {
+            width: 40vw;
+        }
+    }
 }
